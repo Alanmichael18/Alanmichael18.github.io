@@ -80,24 +80,6 @@
       </div>
     </div>
 
-    <!-- To display Resume Modal -->
-    <div class="modal fade modal-xl" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="resumeModalLabel">Resume</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <img src="images/resume.png" class="img-fluid">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
   
 
     <!-- Top section of page -->
@@ -110,7 +92,7 @@
       <div class="row align-items-start">
         <div class="col">
           <div class="text-center">
-            <img src="images/alanpfpcircle.png" class="rounded img-fluid" alt="Picture of Alan Michael" style="max-width:70%;">
+            <img src="images/Alanpfpcircle.png" class="rounded img-fluid" alt="Picture of Alan Michael" style="max-width:70%;">
           </div>
         </div>
         <div class="col">
@@ -118,14 +100,17 @@
           <h1 style="font-size: 50px" id="Home">Hello</h1>
           <h4>About Me</h4>
           <p>
-            I am a computer science student at UCLA. I am passionate about Data Science and have experience in various programming languages such as Python, C/C++, and Bash. My goal is to create innovative solutions to complex problems and promote the use of cutting-edge technology like Machine Learning. 
+            I am a computer science student at UCLA. I am passionate about Data Science and have experience in various programming languages such as Python, C/C++, and Bash. My goal is to create innovative solutions to complex problems and promote the use of cutting-edge technology like Machine Learning. Beyond that, I spend my freetime playing piano, drawing, and hanging out with my friends.
           </p>
         </div>
       </div>
     </div>
     
 
-    <br/><br/><br/>
+    <br/><br/>
+    <hr>
+    <br/>
+    
 
     <!-- Projects SECTION -->
     <div class="text-center mb-3">
@@ -143,6 +128,7 @@
               <li>Developed Shell scripts to interpolate between different time granularities of OMNI and RISR datasets.</li>
               <li>Worked with PySpedas to run simulations on E region ionospheric behavior on relevant time slices.</li>
               <li><b>Technology:</b> Python Scripting for Data Analysis using pandas, Bash scripts for interpolating and retrieving data, Python-based Random Forest Classifier</li>
+              <a href="https://github.com/Alanmichael18/FBIAnalysis">View on github</a>
             </ul>
           </p>
           <br>
@@ -157,28 +143,59 @@
       <div class="row align-items-start">
         <div class="col">
           <p class="text-center">
-            <img src="images/SMARTAGUDesign.png" class="rounded img-fluid" alt="High Level Software Design of SMART Project" style="max-width:80%;">
+            <img src="images/dtreevizplot.png" class="rounded img-fluid" alt="Enhanced Spectrogram produced by model" style="max-width:60%;">
           </p>
         </div>
+        <div class="col">
+          <p class="text-left"> 
+            <h4>Using Machine Learning to Classify Death Grips Music from Good to Garbage</h4>
+            <ul>
+              <li>Using spotify API to fetch parameters relevant to each Death Grips song</li>
+              <li>Auto generated playlist based on user-specified liked songs and compared parameters to full DG dataset</li>
+              <li>Compared sample (User's songs) means to population (total DG dataset) means for each metric</li>
+              <li>Generated RF Classifier to classify new songs as similar or different to current liked songs</li>
+              <li>Used dtreeviz to justify predictions and decompile model</li>
+              <!-- <li>Generated Chromagrams from mp3s using seaborn</li>
+              <li>Expanding to seeing if user's prefer certain melodies and if that can improve accuracy of model</li> -->
+              <li><b>Technology:</b> Pytorch Sequential Neural Network, Python, Pandas, Seaborn, Spotify API</li>
+              <a href="https://medium.com/@alan.michael1018/using-machine-learning-to-classify-death-gripss-music-from-great-to-garba-a0b7a115bf6d"><li>Here's a small writeup on it!</li></a>
+              <a href="https://github.com/Alanmichael18/DGAnalysis">View on github</a>
+            </ul>
+          </p>
+          <br>
+        </div>
+      </div>
+
+      <div class="row align-items-start">
         <div class="col">
           <p class="text-left"> 
             <h4>Surface Magnetic Assessment in Real Time (SMART)</h4>
             <p style="font-size: 20px">Data Connection and Machine Learning based Predictive Analytics Model</p>
             <ul>
               <li>Using a multi-pronged Machine Learning model to predict relationships between magnetometer data. Polynomial Regressors and Support Vector Machines to estimate trajectories of incoming data</li>
-              <li>Used decision trees to translate observed multidimensional correlations into physical formulae</li>
               <li>Interpolate multiple stations' data to use gravity model to predict magnetometer data over areas without stations</li>
               <li>Generate Cost Function to recursively tune parameters and train model to achieve higher accuracies with more data</li>
               <li>Develop Software Plugin to transport final outputs into website and recursively update model's outputs with new data from website</li>
               <li><b>Technology:</b> Pytorch-Based Regressor, Python Scripting for Preprocessing Function, Bash Scripts for data retrieval and collation</li>
+              <a href="https://github.com/Alanmichael18/SMARTproject">View on github</a>
             </ul>
           </p>
           <br>
         </div>
+        <div class="col">
+          <p class="text-center">
+            <img src="images/SMARTAGUDesign.png" class="rounded img-fluid" alt="High Level Software Design of SMART Project" style="max-width:80%;">
+          </p>
+        </div>
       </div>
     </div>
 
-      <!-- <div class="row align-items-start">
+      <div class="row align-items-start">
+        <div class="col">
+          <p class="text-center">
+            <img src="images/spectrogram.png" class="rounded img-fluid" alt="Enhanced Spectrogram produced by model" style="max-width:40%;">
+          </p>
+        </div>
         <div class="col">
           <p class="text-left"> 
             <h4>Artificial Intelligence Solution for Survivor Detection using Deep Neural Network and Spectrogram Analysis to aid First Responders</h4>
@@ -191,12 +208,7 @@
           </p>
           <br>
         </div>
-        <div class="col">
-          <p class="text-center">
-            <img src="../images/spectrogram.png" class="rounded img-fluid" alt="Enhanced Spectrogram produced by model" style="max-width:40%;">
-          </p>
-        </div>
-      </div> -->
+      </div>
 
       <div class="row align-items-start">
         <div class="col">
@@ -219,6 +231,8 @@
         </div>
       </div>
     </div>
+
+    <hr>
 
     <!-- Portfolio SECTION -->
     <div class="text-center mb-3">
@@ -296,7 +310,7 @@
         </div>
         <div class="col">
           <p class="text-left"> 
-            <h5>“Developing a Data Analysis Tool to Predict Farley Buneman Instability using Magnetometer Data” (2023)</h5>
+            <a href="https://medium.com/@alan.michael1018/developing-a-data-analysis-tool-to-predict-radar-data-from-magnetometer-data-387242639214"><h5>“Developing a Data Analysis Tool to Predict Farley Buneman Instability using Magnetometer Data” (2023)</h5></a>
           </p>
           <p>
             <ul>
@@ -306,7 +320,7 @@
           </p>
 
           <p class="text-left"> 
-            <h5>“Development of Surface Magnetic Assessment in RealTime (SMART) Data Platform and KNN Predictive Analytics Model” (2022)</h5>
+            <a href="https://medium.com/@alan.michael1018/development-of-surface-magnetic-assessment-in-realtime-smart-data-platform-and-knn-based-6c9621032697"><h5>“Development of Surface Magnetic Assessment in RealTime (SMART) Data Platform and KNN Predictive Analytics Model” (2022)</h5></a>
           </p>
           <p>
             <ul>
@@ -315,7 +329,7 @@
           </p>
 
           <p class="text-left"> 
-            <h5>“Optimizing the Training Process of a Machine Learning Model Using a Novel Mathematical Preprocessing Function” (2020)</h5>
+            <a href="https://www.academia.edu/53791869/Optimizing_the_training_process_of_a_machine_learning_model_using_a_novel_mathematical_preprocessing_function"><h5>“Optimizing the Training Process of a Machine Learning Model Using a Novel Mathematical Preprocessing Function” (2020)</h5></a>
           </p>
           <p>
             <ul>
@@ -324,7 +338,7 @@
           </p>
 
           <p class="text-left"> 
-            <h5>“Autism Diagnostic Tool Using Gesture Recognition and Machine Learning” (2019)</h5>
+            <a href="https://www.academia.edu/42607420/Autism_Diagnosis_Tool_Using_Gesture_Recognition_and_Machine_Learning?source=swp_share"><h5>“Autism Diagnostic Tool Using Gesture Recognition and Machine Learning” (2019)</h5></a>
           </p>
           <p>
             <ul>
@@ -475,7 +489,9 @@
     </div>
 
 
-    <br/><br/><br/>
+    <br/><br/>
+    <hr>
+    <br/>
 
     <!-- Contact SECTION -->
     <div class="text-center mb-3">
