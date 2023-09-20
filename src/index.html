@@ -1,0 +1,512 @@
+<!doctype html>
+
+
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alan Michael</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Alan Michael</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+          <!-- Left side of Navbar -->
+          <ul class="navbar-nav me-auto">
+            <a class="nav-item" href="https://github.com/Alanmichael18?tab=repositories" target="_blank" rel="noopener noreferrer">
+              <img src="../images/github.png" alt="" width="30" height="24">
+            </a>
+            <a class="nav-item" href="https://www.linkedin.com/in/alan-michael-64383b19a/" target="_blank" rel="noopener noreferrer" style="padding-right:3px;">
+              <img src="../images/linkedin.png" alt="" width="30" height="24">
+            </a>
+            <a class="nav-item" href="https://ucla.joinhandshake.com/stu/users/31147967" target="_blank" rel="noopener noreferrer" style="padding-right:3px;">
+              <img src="../images/handshake.png" alt="" width="30" height="24">
+            </a>
+            <a type="button" class="nav-item" data-bs-toggle="modal" data-bs-target="#emailModal" style="margin-left:0px;">
+              <img src="../images/email.png" alt="" width="30" height="24">
+            </a>
+          </ul>
+
+          <!-- Right side of Navbar -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#Projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#Resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+
+  <main role="main" class="container">
+
+    
+
+    <!-- To display Email Modal -->
+    <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="emailModalLabel">Email</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>alanmichael18@g.ucla.edu</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- To display Resume Modal -->
+    <div class="modal fade modal-xl" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="resumeModalLabel">Resume</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="../images/resume.png" class="img-fluid">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+
+    <!-- Top section of page -->
+    <!-- <div class="text-center mb-4 mt-4">
+      <h2 id="Home">Alan Michael</h2>
+    </div> -->
+
+    
+    <div class="text-left mb-4 mt-4">
+      <div class="row align-items-start">
+        <div class="col">
+          <div class="text-center">
+            <img src="../images/Alanpfpcircle.png" class="rounded img-fluid" alt="Picture of Alan Michael" style="max-width:70%;">
+          </div>
+        </div>
+        <div class="col">
+          <br><br><br><br><br>
+          <h1 style="font-size: 50px" id="Home">Hello</h1>
+          <h4>About Me</h4>
+          <p>
+            I am a computer science student at UCLA. I am passionate about Data Science and have experience in various programming languages such as Python, C/C++, and Bash. My goal is to create innovative solutions to complex problems and promote the use of cutting-edge technology like Machine Learning. 
+          </p>
+        </div>
+      </div>
+    </div>
+    
+
+    <br/><br/><br/>
+
+    <!-- Projects SECTION -->
+    <div class="text-center mb-3">
+      <h2 id="Projects">Projects</h2>
+    </div>
+    <div class="container text-left">
+      <div class="row align-items-start">
+        <div class="col">
+          <p class="text-left"> 
+            <h4>Analyzing and Classifying Farley Buneman Instability (FB)</h4>
+            <ul>
+              <li>Ran Statistical Analysis with pandas on frequency and correlation between FB and Surface Magnetometer readings</li>
+              <li>Used decision trees to translate observed multidimensional correlations into physical formulae</li>
+              <li>Expanded analysis into seeing root causes for instability using unsupervised MeanShift clustering on ionospheric plasma data</li>
+              <li>Developed Shell scripts to interpolate between different time granularities of OMNI and RISR datasets.</li>
+              <li>Worked with PySpedas to run simulations on E region ionospheric behavior on relevant time slices.</li>
+              <li><b>Technology:</b> Python Scripting for Data Analysis using pandas, Bash scripts for interpolating and retrieving data, Python-based Random Forest Classifier</li>
+            </ul>
+          </p>
+          <br>
+        </div>
+        <div class="col">
+          <p class="text-center">
+            <img src="../images/FinalDTPlot.png" class="rounded img-fluid" alt="Final Decision Tree from Random Forest Classifier" style="max-width:80%;">
+          </p>
+        </div>
+      </div>
+
+      <div class="row align-items-start">
+        <div class="col">
+          <p class="text-center">
+            <img src="../images/SMARTAGUDesign.png" class="rounded img-fluid" alt="High Level Software Design of SMART Project" style="max-width:80%;">
+          </p>
+        </div>
+        <div class="col">
+          <p class="text-left"> 
+            <h4>Surface Magnetic Assessment in Real Time (SMART)</h4>
+            <p style="font-size: 20px">Data Connection and Machine Learning based Predictive Analytics Model</p>
+            <ul>
+              <li>Using a multi-pronged Machine Learning model to predict relationships between magnetometer data. Polynomial Regressors and Support Vector Machines to estimate trajectories of incoming data</li>
+              <li>Used decision trees to translate observed multidimensional correlations into physical formulae</li>
+              <li>Interpolate multiple stations' data to use gravity model to predict magnetometer data over areas without stations</li>
+              <li>Generate Cost Function to recursively tune parameters and train model to achieve higher accuracies with more data</li>
+              <li>Develop Software Plugin to transport final outputs into website and recursively update model's outputs with new data from website</li>
+              <li><b>Technology:</b> Pytorch-Based Regressor, Python Scripting for Preprocessing Function, Bash Scripts for data retrieval and collation</li>
+            </ul>
+          </p>
+          <br>
+        </div>
+      </div>
+    </div>
+
+      <!-- <div class="row align-items-start">
+        <div class="col">
+          <p class="text-left"> 
+            <h4>Artificial Intelligence Solution for Survivor Detection using Deep Neural Network and Spectrogram Analysis to aid First Responders</h4>
+            <ul>
+              <li>Sound and Noise from a disaster site is recorded and passed to AI program</li>
+              <li>Machine learning model is trained to separates human voice from other noises</li>
+              <li>Human voices amplified and fed to the listener group</li>
+              <li><b>Technology:</b> Raspberry-Pi Raspbian, Python-based preprocessing algorithm, Keras Sequential Machine Learning Model</li>
+            </ul>
+          </p>
+          <br>
+        </div>
+        <div class="col">
+          <p class="text-center">
+            <img src="../images/spectrogram.png" class="rounded img-fluid" alt="Enhanced Spectrogram produced by model" style="max-width:40%;">
+          </p>
+        </div>
+      </div> -->
+
+      <div class="row align-items-start">
+        <div class="col">
+          <p class="text-left"> 
+            <h4>Autism Diagnostic Tool using Gesture Recognition and Machine Learning</h4>
+            <ul>
+              <li>Gross motor Skills analysis using Early Denver Model of Autism treatment</li>
+              <li>Natural Environment Analysis vs Doctor's office using Home based device and Machine learning model</li>
+              <li>Unlimited evaluation time and No wait time</li>
+              <li>Universal Reach and Diagnostics using Cloud based reporting</li>
+              <li><b>Technology:</b> Random Forest Classifier on python, Kinect SDK, Arduino Scripting, Unity3D Engine C# Scripting</li>
+            </ul>
+          </p>
+          <br>
+        </div>
+        <div class="col">
+          <p class="text-center">
+            <img src="../images/highlevelsoftdesign.png" class="rounded img-fluid" alt="High Level Software Design of Project" style="max-width:80%;">
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio SECTION -->
+    <div class="text-center mb-3">
+      <h2 id="Resume">Resume</h2>
+    </div>
+
+    <!-- EDUCATION SECTION -->
+    <div class="container text-left">
+      <div class="row align-items-start">
+        <div class="col">
+          <p class = "text-center">
+            <h4 id="Education">Education</h4>
+          </p>
+        </div>
+        <div class="col">
+          <p class="text-left"> 
+            2021-2025 <br>
+            <h5>University of California, Los Angeles <br> Bachelor's Degree in Computer Science </h5>
+          </p>
+          <p>
+            Relevant Coursework: <br>
+            <ul>
+              <li>Operating Systems</li>
+              <li>Network Fundamentals</li>
+              <li>Computer Architecture</li>
+              <li>Algorithms</li>
+              <li>Statistics and Probability</li>
+              <li>Multivariate Calculus</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Skills SECTION -->
+    <div class="container text-left">
+      <div class="row align-items-start">
+        <div class="col">
+          <p class = "text-center">
+            <h4 id="Skills">Technical Skills and Applications</h4>
+          </p>
+        </div>
+        <div class="col">
+          <p class="text-left"> 
+            <h5>Machine Learning Frameworks:</h5>
+            TensorFlow, Pytorch, Keras<br>
+          </p>
+          <p class="text-left"> 
+            <h5>Scripting Languages:</h5>
+            Python, C/C++, Java, C#, MATLAB<br>
+          </p>
+          <p class="text-left"> 
+            <h5>Systems Development:</h5>
+            Kernel Programming, Bash/DOS, linux shell, socket<br>
+          </p>
+          <p class="text-left"> 
+            <h5>Data Management:</h5>
+            SQL, PHP, Tableau<br>
+          </p>
+          <p class="text-left"> 
+            <h5>Soft Skills:</h5>
+            Goal Oriented, Hardworking, Time-management<br>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Research SECTION -->
+    <div class="container text-left">
+      <div class="row align-items-start">
+        <div class="col">
+          <p class = "text-center">
+            <h4 id="Research">Published Research</h4>
+          </p>
+        </div>
+        <div class="col">
+          <p class="text-left"> 
+            <h5>“Developing a Data Analysis Tool to Predict Farley Buneman Instability using Magnetometer Data” (2023)</h5>
+          </p>
+          <p>
+            <ul>
+              <li>Represented UCLA at NASA workshop during CGS UCAR (November 2023)</li>
+              <li>Represented UCLA during CEDAR Conference for Atmospheric Science (June 2023)</li>
+            </ul>
+          </p>
+
+          <p class="text-left"> 
+            <h5>“Development of Surface Magnetic Assessment in RealTime (SMART) Data Platform and KNN Predictive Analytics Model” (2022)</h5>
+          </p>
+          <p>
+            <ul>
+              <li>Represented UCLA at AGU Conference for Space Science (December 2022)</li>
+            </ul>
+          </p>
+
+          <p class="text-left"> 
+            <h5>“Optimizing the Training Process of a Machine Learning Model Using a Novel Mathematical Preprocessing Function” (2020)</h5>
+          </p>
+          <p>
+            <ul>
+              <li>Presented at Technology Student Association (June 2021)</li>
+            </ul>
+          </p>
+
+          <p class="text-left"> 
+            <h5>“Autism Diagnostic Tool Using Gesture Recognition and Machine Learning” (2019)</h5>
+          </p>
+          <p>
+            <ul>
+              <li>Presented at ISEF Robotics Conference (May 2019)</li>
+            </ul>
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <!-- WorkExp SECTION -->
+    <div class="container text-left">
+      <div class="row align-items-start">
+        <div class="col">
+          <p class = "text-center">
+            <h4 id="WorkExp">Work Experience</h4>
+          </p>
+        </div>
+        <div class="col">
+          <p class="text-left"> 
+            Sept 2023 - Present <br>
+            <h5>National Center for Atmospheric Research (NCAR) - Research Assistant</h5>
+          </p>
+          <p>
+            <ul>
+              <li>
+                Developing Data Analysis tool for correlating different datasets in NASA OMNI library
+                <ul>
+                  <li>Wrote shell script on raspberry pi to collate real-time API requests from NASA OMNI</li>
+                  <li>Interpolated API data and fed into jupyter server.</li>
+                </ul>
+              </li>
+              <li>
+                Creating Random Forest Classifier for determining causation with Magnetometer Data
+                <ul>
+                  <li>Used pandas to manipulate incoming data and label data based on criterion.</li>
+                  <li>Used bootstrap aggregation to get plurality vote of decision trees to generate predictions.</li>
+                </ul>
+              </li>
+              <li>
+                Running Clustering algorithm for categorizing multiple types of instability
+                <ul>
+                  <li>Utilized scikit to test and develop various approaches before selecting Mean Shift algorithm.</li>
+                  <li>Implementing functions and generated specialized version of MeanShift to work with custom scales of variables.</li>
+                </ul>
+              </li>
+              <li>
+                Working through UCLA to publish research in AGU academic journal
+              </li>
+            </ul>
+          </p>
+          <br>
+
+          <p class="text-left"> 
+            Jan 2023 - June 2023 <br>
+            <h5>UCLA Learning Assistant (LA) Program: Multivariate Calculus and Physics Lab</h5>
+          </p>
+          <p>
+            <ul>
+              <li>
+                Effectively explained Multivariate Calculus with pedagogical techniques
+              </li>
+              <li>
+                Worked with Jupyter Notebook and Arduino UNO in teaching environment
+              </li>
+              <li>
+                Reflected on teaching and learning through weekly submissions and discussing with other LAs
+              </li>
+            </ul>
+          </p>
+          <br>
+
+          <p class="text-left"> 
+            Apr 2022 - Sept 2023 <br>
+            <h5>National Science Foundation (NSF) Student Researcher</h5>
+          </p>
+          <p>
+            <ul>
+              <li>
+                Developing data pipeline and long-term storage from magnetometer stations around US and centralized cloud server
+                <ul>
+                  <li>Wrote Shell scripts to store data in cloud buckets and cleanup/reformat data for analysis.</li>
+                  <li>Developing real-time connection with minimal latency using python-socket scripts.</li>
+                  <li>Working on phasing in older stations into data network.</li>
+                </ul>
+              </li>
+              <li>
+                Creating Machine Learning Predictive Analytics Model for Data Analysis
+                <ul>
+                  <li>Visualizing Data using matplotlib to find optimal variable groups.</li>
+                  <li>Developing preprocessing algorithm to clean up incoming data and prepare it for training engine.</li>
+                  <li>
+                    Using 3 Machine Learning techniques to create regressors for predicting data.
+                    <ul>
+                      <li>Support Vector Machines</li>
+                      <li>Polynomial Regressors</li>
+                      <li>Linear Regressors</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Managing social media outreach and community engagement through YouTube and Twitter
+                <ul>
+                  <li>Help online outreach through lectures from professionals in geomagnetism and magneto-seismology - SMART Talks.</li>
+                  <li>Edited SMART Talks and Posting regularly on Twitter.</li>
+                </ul>
+              </li>
+              <li>
+                Assisting in making a Project Website to display data and project information
+                <ul>
+                  <li>Creating plugin to provide secure access to SMART GMAG data via website.</li>
+                  <li>Connecting website with social media and SMART Talks YouTube channel.</li>
+                </ul>
+              </li> 
+            </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Awards SECTION -->
+    <div class="container text-left">
+      <div class="row align-items-start">
+        <div class="col">
+          <p class = "text-center">
+            <h4 id="Awards">Honors and Awards</h4>
+          </p>
+        </div>
+        <div class="col">
+          <p class="text-left"> 
+            <h5>International Science and Engineering Fair (ISEF)</h5>
+            American Statistical Association Award (Phoenix, 2019)<br>
+          </p>
+          <p class="text-left"> 
+            <h5>International Science and Engineering Fair (ISEF)</h5>
+            International Council on Systems Engineering Award (Phoenix, 2019)<br>
+          </p>
+          <p class="text-left"> 
+            <h5>Technology Student Association (TSA)</h5>
+            National Championship in Software Development (Washington DC, 2019)<br>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <br/><br/><br/>
+
+    <!-- Contact SECTION -->
+    <div class="text-center mb-3">
+      <h2 id="Contact">Contact Me</h2>
+      <p>
+        I'm excited to hear from you!
+      </p>
+    </div>
+    <div class="container text-center">
+        <div class="row align-items-start">
+          <div class="col">
+            <p>
+              <h5>Phone Number:</h5>
+              +1 (716) 507-7335
+            </p>
+          </div>
+          <div class="col">
+            <p>
+              <h5>Email Address:</h5>
+              alanmichael18@g.ucla.edu
+            </p>
+          </div>
+        </div>
+    </div>
+    <br><br><br>
+
+  
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>
